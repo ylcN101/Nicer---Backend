@@ -1,5 +1,6 @@
+require('dotenv').config()
+
 module.exports = {
-  dbURL:
-    'mongodb+srv://yuvalcohen12234:6AaxfWuRCDEkuVDc@cluster0.aejahfo.mongodb.net/?retryWrites=true&w=majority',
-  dbName: 'gig_db',
+  dbURL: process.env.ATLAS_URL,
+  dbName: process.env.ATLAS_DB_NAME,
 }
