@@ -20,7 +20,7 @@ const router = express.Router()
 
 router.get('/', log, getGigs)
 router.get('/:id', getGigById)
-router.post('/', requireAuth, addGig)
+router.post('/', addGig)
 router.put('/:id', updateGig)
 router.delete('/:id', removeGig)
 // router.delete('/:id', requireAuth, requireAdmin, removeGig)
