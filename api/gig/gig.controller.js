@@ -1,4 +1,5 @@
 const gigService = require('./gig.service.js')
+const socketService = require('../../services/socket.service.js')
 
 const logger = require('../../services/logger.service')
 
@@ -38,6 +39,11 @@ async function addGig(req, res) {
     console.log('gig', gig)
     const addedGig = await gigService.add(gig)
     res.json(addedGig)
+    socketService.broadcastUserUpdate({
+      productName: gig.title,
+      type: 'add',
+      userId: gig.owner._id,
+    })
   } catch (err) {
     logger.error('Failed to add gig', err)
     res.status(500).send({ err: 'Failed to add gig' })
@@ -49,6 +55,11 @@ async function updateGig(req, res) {
     const gig = req.body
     const updatedGig = await gigService.update(gig)
     res.json(updatedGig)
+    socketService.broadcastUserUpdate({
+      productName: gig.title,
+      type: 'add',
+      userId: gig.owner._id,
+    })
   } catch (err) {
     logger.error('Failed to update gig', err)
     res.status(500).send({ err: 'Failed to update gig' })
@@ -58,8 +69,14 @@ async function updateGig(req, res) {
 async function removeGig(req, res) {
   try {
     const gigId = req.params.id
+    const gig = await gigService.getById(gigId)
     const removedId = await gigService.remove(gigId)
     res.send(removedId)
+    socketService.broadcastUserUpdate({
+      productName: 'Gig',
+      type: 'remove',
+      userId: gig.owner._id,
+    })
   } catch (err) {
     logger.error('Failed to remove gig', err)
     res.status(500).send({ err: 'Failed to remove gig' })
@@ -90,6 +107,11 @@ async function removeGigMsg(req, res) {
 
     const removedId = await gigService.removeGigMsg(gigId, msgId)
     res.send(removedId)
+    socketService.broadcastUserUpdate({
+      productName: gig.title,
+      type: 'add',
+      userId: gig.owner._id,
+    })
   } catch (err) {
     logger.error('Failed to remove gig msg', err)
     res.status(500).send({ err: 'Failed to remove gig msg' })
