@@ -53,7 +53,7 @@ setupSocketAPI(http)
 // our SPA (single page app) (the index.html file) and allow vue/react-router to take it from there
 app.get('/**', (req, res) => {
   console.log('hi12')
-  res.sendFile(path.join(__dirname, 'public', 'index.html'))
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
 const logger = require('./services/logger.service')
