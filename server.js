@@ -33,6 +33,7 @@ const authRoutes = require("./api/auth/auth.routes");
 const userRoutes = require("./api/user/user.routes");
 const reviewRoutes = require("./api/review/review.routes");
 const gigRoutes = require("./api/gig/gig.routes");
+const orderRoutes = require("./api/order/order.routes");
 const { setupSocketAPI } = require("./services/socket.service");
 
 // routes
@@ -43,6 +44,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/review", reviewRoutes);
 app.use("/api/gig", gigRoutes);
+app.use("/api/order", orderRoutes);
 setupSocketAPI(http);
 
 // Make every server-side-route to match the index.html
