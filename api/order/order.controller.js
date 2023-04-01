@@ -34,6 +34,12 @@ async function addOrder(req, res) {
     const order = req.body
     console.log('order', order)
     const addedOrder = await orderService.add(order)
+    console.log(addedOrder)
+    socketService.broadcastUserUpdate({
+      productName: addedOrder.title,
+      type: 'add',
+      userId: addedOrder.sellerId,
+    })
     res.json(addedOrder)
   } catch (err) {
     logger.error('Failed to add order', err)
@@ -46,11 +52,6 @@ async function updateOrder(req, res) {
     const order = req.body
     const updatedOrder = await orderService.update(order)
     res.json(updatedOrder)
-    socketService.broadcastUserUpdate({
-      productName: order.title,
-      type: 'add',
-      userId: order.owner._id,
-    })
   } catch (err) {
     logger.error('Failed to update order', err)
     res.status(500).send({ err: 'Failed to update order' })
