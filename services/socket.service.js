@@ -2,6 +2,8 @@ const logger = require('./logger.service')
 
 var gIo = null
 
+const msgs = []
+
 function setupSocketAPI(http) {
   gIo = require('socket.io')(http, {
     cors: {
@@ -10,9 +12,12 @@ function setupSocketAPI(http) {
   })
   gIo.on('connection', (socket) => {
     logger.info(`New connected socket [id: ${socket.id}]`)
-    socket.on('disconnect', (socket) => {
-      logger.info(`Socket disconnected [id: ${socket.id}]`)
+
+    socket.on('set-user-socket', (userId) => {
+      socket.userId = userId
+      logger.info(`Socket ${socket.id} is now connected to user ${userId}`)
     })
+
     socket.on('chat-set-topic', (topic) => {
       if (socket.myTopic === topic) return
       if (socket.myTopic) {
@@ -21,33 +26,81 @@ function setupSocketAPI(http) {
           `Socket is leaving topic ${socket.myTopic} [id: ${socket.id}]`
         )
       }
-      socket.join(topic)
       socket.myTopic = topic
-    })
-    socket.on('chat-send-msg', (msg) => {
-      logger.info(
-        `New chat msg from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`
+      socket.emit(
+        'chat-history',
+        msgs.filter((msg) => msg.myTopic === socket.myTopic)
       )
-      // emits to all sockets:
-      // gIo.emit('chat addMsg', msg)
-      // emits only to sockets in the same room
-      gIo.to(socket.myTopic).emit('chat-add-msg', msg)
+      socket.join(topic)
+      return
     })
-    socket.on('user-watch', (userId) => {
+
+    socket.on('join-chat', (nickname) => {
+      socket.nickname = nickname
+      socket.isNew = true
+
+      logger.info(`${socket.nickname} joined a chat - [id: ${socket.id}]`)
+
+      return
+    })
+
+    socket.on('user-watch', async (user) => {
       logger.info(
-        `user-watch from socket [id: ${socket.id}], on user ${userId}`
+        `user-watch from socket [id: ${socket.id}], on user ${user.username}`
       )
-      socket.join('watching:' + userId)
+      socket.join('watching:' + user.username)
+
+      const toSocket = await _getUserSocket(user._id)
+      if (toSocket)
+        toSocket.emit(
+          'user-is-watching',
+          `Hey ${user.username}! A user is watching your gig right now.`
+        )
+      return
     })
-    socket.on('set-user-socket', (userId) => {
+
+    socket.on('gig-ordered', async (gig) => {
       logger.info(
-        `Setting socket.userId = ${userId} for socket [id: ${socket.id}]`
+        `gig-ordered from socket [id: ${socket.id}], on gig ${gig._id}`
       )
-      socket.userId = userId
+      socket.join('watching:' + gig.owner.username)
+      socket.emit(
+        'order-approved',
+        `Hey ${socket.username}! \nYour order is being processed. stay tuned.`
+      )
+
+      const toSocket = await _getUserSocket(gig.owner._id)
+      if (toSocket)
+        toSocket.emit(
+          'user-ordered-gig',
+          `Hey ${gig.owner.username}! \nA user has just ordered one of your gigs right now.`
+        )
+      return
     })
+
+    socket.on('order-change-status', async (buyer) => {
+      logger.info(
+        `Change order's status by socket [id: ${socket.id}], for buyer ${buyer._id}`
+      )
+      socket.join('watching:' + buyer.username)
+
+      const toSocket = await _getUserSocket(buyer._id)
+      if (toSocket)
+        toSocket.emit(
+          'order-status-update',
+          `Hey ${buyer.username}! \nYour order's status has been changed.`
+        )
+      return
+    })
+
     socket.on('unset-user-socket', () => {
       logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
       delete socket.userId
+      return
+    })
+
+    socket.userId = socket.on('disconnect', (socket) => {
+      logger.info(`Socket disconnected [id: ${socket.id}]`)
     })
   })
 }
@@ -59,6 +112,7 @@ function emitTo({ type, data, label }) {
 
 async function emitToUser({ type, data, userId }) {
   userId = userId.toString()
+  console.log('userId', userId)
   const socket = await _getUserSocket(userId)
 
   if (socket) {

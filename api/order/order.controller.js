@@ -34,12 +34,6 @@ async function addOrder(req, res) {
     const order = req.body
     console.log('order', order)
     const addedOrder = await orderService.add(order)
-    console.log(addedOrder)
-    socketService.broadcastUserUpdate({
-      productName: addedOrder.title,
-      type: 'add',
-      userId: addedOrder.sellerId,
-    })
     res.json(addedOrder)
   } catch (err) {
     logger.error('Failed to add order', err)

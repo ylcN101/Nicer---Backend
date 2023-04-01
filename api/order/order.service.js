@@ -1,6 +1,7 @@
 const dbService = require('../../services/db.service')
 const logger = require('../../services/logger.service')
 const utilService = require('../../services/util.service')
+const socketService = require('../../services/socket.service')
 const ObjectId = require('mongodb').ObjectId
 
 async function query(filterBy) {
@@ -41,9 +42,25 @@ async function remove(orderId) {
 
 async function add(order) {
   try {
-    const collection = await dbService.getCollection('order')
-    await collection.insertOne(order)
-    return order
+    let collection = await dbService.getCollection('order')
+    let addedOrder = await collection.insertOne(order)
+    addedOrder = addedOrder.ops[0]
+    addedOrder.createdAt = ObjectId(addedOrder._id).getTimestamp()
+
+    socketService.emitToUser({
+      type: 'new-order-seller',
+      data: addedOrder,
+      userId: addedOrder.seller._id,
+    })
+    socketService.emitToUser({
+      type: 'new-order-buyer',
+      data: addedOrder,
+      userId: addedOrder.buyer._id,
+    })
+
+    console.log('addedOrder', addedOrder)
+
+    return addedOrder
   } catch (err) {
     logger.error('cannot insert order', err)
     throw err
