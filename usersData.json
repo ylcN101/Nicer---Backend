@@ -1,8 +1,9 @@
 [
     {
-        "fullName": "admin",
-        "password": "admin",
+        "fullName": "Nicerr",
+        "password": "1234",
         "username": "itximtiazz",
+        "_id": "642968d94d726088d06d30ef",
         "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
         "level": 2,
         "score": 5,
@@ -16,9 +17,10 @@
         "reviewsCount": 115
     },
     {
-        "fullName": "user",
-        "password": "user",
-        "username": "airbornesnow",
+        "fullName": "John",
+        "password": "1234",
+        "username": "itsjhonhere",
+        "_id": "6429672497371f8f70dfc34e",
         "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680350193/73_mdfscd.jpg",
         "from": "United States",
         "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
