@@ -47,17 +47,6 @@ async function add(order) {
     let addedOrder = await collection.insertOne(order)
     addedOrder = addedOrder.ops[0]
     addedOrder.createdAt = ObjectId(addedOrder._id).getTimestamp()
-
-    socketService.emitToUser({
-      type: 'new-order-seller',
-      data: addedOrder,
-      userId: addedOrder.seller._id,
-    })
-    socketService.emitToUser({
-      type: 'new-order-buyer',
-      data: addedOrder,
-      userId: addedOrder.buyer._id,
-    })
     return addedOrder
   } catch (err) {
     logger.error('cannot insert order', err)
