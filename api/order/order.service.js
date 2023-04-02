@@ -47,6 +47,7 @@ async function add(order) {
     let addedOrder = await collection.insertOne(order)
     addedOrder = addedOrder.ops[0]
     addedOrder.createdAt = ObjectId(addedOrder._id).getTimestamp()
+    console.log('Socket')
     return addedOrder
   } catch (err) {
     logger.error('cannot insert order', err)

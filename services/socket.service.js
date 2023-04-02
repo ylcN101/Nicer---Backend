@@ -44,17 +44,17 @@ function setupSocketAPI(http) {
       return
     })
 
-    socket.on('user-watch', async (user) => {
+    socket.on('gig-viewed', async (user) => {
       logger.info(
-        `user-watch from socket [id: ${socket.id}], on user ${user.username}`
+        `gig-viewed from socket [id: ${socket.id}], on user ${user.username}`
       )
       socket.join('watching:' + user.username)
 
       const toSocket = await _getUserSocket(user._id)
       if (toSocket)
         toSocket.emit(
-          'user-is-watching',
-          `Hey ${user.username}! A user is watching your gig right now.`
+          'gig-viewed',
+          `Hey ${user.username}! Someone is watching your gig right now.`
         )
       return
     })
@@ -63,17 +63,11 @@ function setupSocketAPI(http) {
       logger.info(
         `gig-ordered from socket [id: ${socket.id}], on gig ${gig._id}`
       )
-      socket.join('watching:' + gig.owner.username)
-      socket.emit(
-        'order-approved',
-        `Hey ${socket.username}! \nYour order is being processed. stay tuned.`
-      )
-
       const toSocket = await _getUserSocket(gig.owner._id)
       if (toSocket)
         toSocket.emit(
           'user-ordered-gig',
-          `Hey ${gig.owner.username}! \nA user has just ordered one of your gigs right now.`
+          `Hey ${gig.owner.username}! A user has just ordered one of your gigs right now.`
         )
       return
     })
@@ -91,12 +85,6 @@ function setupSocketAPI(http) {
           `Hey ${buyer.username}! \nYour order status has been changed.`
         )
 
-      return
-    })
-
-    socket.on('unset-user-socket', () => {
-      logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
-      delete socket.userId
       return
     })
 
