@@ -44,17 +44,17 @@ function setupSocketAPI(http) {
       return
     })
 
-    socket.on('gig-viewed', async (user) => {
+    socket.on('user-watch', async (user) => {
       logger.info(
-        `gig-viewed from socket [id: ${socket.id}], on user ${user.username}`
+        `user-watch from socket [id: ${socket.id}], on user ${user.username}`
       )
       socket.join('watching:' + user.username)
 
       const toSocket = await _getUserSocket(user._id)
       if (toSocket)
         toSocket.emit(
-          'gig-viewed',
-          `Hey ${user.username}! Someone is watching your gig right now.`
+          'user-is-watching',
+          `Hey ${user.username}! A user is watching your gig right now.`
         )
       return
     })
@@ -63,11 +63,17 @@ function setupSocketAPI(http) {
       logger.info(
         `gig-ordered from socket [id: ${socket.id}], on gig ${gig._id}`
       )
+      socket.join('watching:' + gig.owner.username)
+      socket.emit(
+        'order-approved',
+        `Hey ${socket.username}! \nYour order is being processed. stay tuned.`
+      )
+
       const toSocket = await _getUserSocket(gig.owner._id)
       if (toSocket)
         toSocket.emit(
           'user-ordered-gig',
-          `Hey ${gig.owner.username}! A user has just ordered one of your gigs right now.`
+          `Hey ${gig.owner.username}! \nA user has just ordered one of your gigs right now.`
         )
       return
     })
@@ -88,6 +94,12 @@ function setupSocketAPI(http) {
       return
     })
 
+    socket.on('unset-user-socket', () => {
+      logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
+      delete socket.userId
+      return
+    })
+
     socket.userId = socket.on('disconnect', (socket) => {
       logger.info(`Socket disconnected [id: ${socket.id}]`)
     })
@@ -100,7 +112,7 @@ function emitTo({ type, data, label }) {
 }
 
 async function emitToUser({ type, data, userId }) {
-  userId = userId.toString()
+  // userId = userId.toString()
   console.log('userId', userId)
   const socket = await _getUserSocket(userId)
 
