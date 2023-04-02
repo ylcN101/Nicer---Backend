@@ -111,7 +111,7 @@
             "isSeller": true,
             "reviewsCount": 115
         },
-        {},
+        
         {
             "title": "I will do photo editing, compositing or anything in photoshop",
             "categories": [
@@ -309,7 +309,6 @@
             "rate": 5
         },
         {
-            "_id": "642968d94d726088d06d30ef",
             "title": "Professional Logo Design for Your Business",
             "categories": [
                 "graphic design"
@@ -360,7 +359,6 @@
             "rate": 4.8
         },
         {
-            "_id": "642968d94d726088d06d30ef",
             "title": "Professional Resume Writing Services",
             "categories": [
                 "writing"
@@ -463,7 +461,6 @@
             "rate": 4.8
         },
         {
-            "_id": "642968d94d726088d06d30ef",
             "title": "Professional Writing and Editing Services",
             "categories": [
                 "writing"
@@ -514,7 +511,7 @@
             "rate": 4.8
         },
         {
-            "_id": "642968d94d726088d06d30ef",
+        
             "title": "Professional Writing and Editing Services",
             "categories": [
                 "writing"
@@ -567,7 +564,6 @@
             "rate": 5
         },
         {
-            "_id": "642968d94d726088d06d30ef",
             "title": "Professional Logo Design for Your Business",
             "categories": [
                 "graphic design"

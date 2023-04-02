@@ -58,9 +58,6 @@ async function add(order) {
       data: addedOrder,
       userId: addedOrder.buyer._id,
     })
-
-    console.log('addedOrder', addedOrder)
-
     return addedOrder
   } catch (err) {
     logger.error('cannot insert order', err)
