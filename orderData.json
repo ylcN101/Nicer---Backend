@@ -1,30 +1,24 @@
 [
     {
         "seller": {
-            "fullName": "user",
-            "password": "user",
-            "username": "airbornesnow",
-            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680350193/73_mdfscd.jpg",
+            "fullName": "John",
+            "password": "1234",
+            "username": "itsjhonhere",
+            "_id": "6429672497371f8f70dfc34e",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680024290/1C0FFFF2-4EBD-4DB8-A69A-6CAC1E0FD058_rtawds.webp",
             "from": "United States",
             "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
             "isSeller": false
         },
         "buyer": {
-            "fullName": "admin",
-            "password": "admin",
-            "username": "itximtiazz",
+            "fullName": "John",
+            "password": "1234",
+            "username": "itsjhonhere",
             "_id": "6429672497371f8f70dfc34e",
-            "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
-            "level": 2,
-            "score": 5,
-            "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680024290/1C0FFFF2-4EBD-4DB8-A69A-6CAC1E0FD058_rtawds.webp",
             "from": "United States",
             "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
-            "responseTime": "1 hour",
-            "MemberSince": "Mar 2020",
-            "isSeller": true,
-            "LastDelivery": "1 day",
-            "reviewsCount": 115
+            "isSeller": false
         },
         "gig": {
             "boughtAt": 1680195033485,
@@ -103,19 +97,17 @@
             "isSeller": false
         },
         "seller": {
-            "fullName": "admin",
-            "password": "admin",
-            "username": "leitchsteve",
-            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026371/7e725954-a185-416c-9d73-cae11b4ec8ed_imsvrp.webp",
+            "fullName": "Nicerr",
+            "password": "1234",
+            "username": "itximtiazz",
+            "_id": "642968d94d726088d06d30ef",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026368/petval-2_j7jzcv.webp",
             "level": 2,
             "score": 5,
             "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
             "from": "United States",
             "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
-            "responseTime": "1 hour",
-            "MemberSince": "Mar 2020",
             "isSeller": true,
-            "LastDelivery": "1 day",
             "reviewsCount": 115
         },
         "gig": {
@@ -185,30 +177,27 @@
     },
     {
         "buyer": {
-            "fullName": "user",
-            "password": "user",
-            "username": "airbornesnow",
+            "fullName": "John",
+            "password": "1234",
+            "username": "itsjhonhere",
             "_id": "6429672497371f8f70dfc34e",
-            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680350193/73_mdfscd.jpg",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680024290/1C0FFFF2-4EBD-4DB8-A69A-6CAC1E0FD058_rtawds.webp",
             "from": "United States",
             "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
             "isSeller": false
         },
         "seller": {
-            "fullName": "admin",
-            "password": "admin",
-            "username": "hyperion_tv",
-            "_id": "6429672497371f8f70dfc34e",
-            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680355672/JPEG_20210508_031254_836139879_kayizb.webp",
+            "fullName": "Nicerr",
+            "password": "1234",
+            "username": "itximtiazz",
+            "_id": "642968d94d726088d06d30ef",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026368/petval-2_j7jzcv.webp",
             "level": 2,
             "score": 5,
             "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
             "from": "United States",
             "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
-            "responseTime": "1 hour",
-            "MemberSince": "Mar 2020",
             "isSeller": true,
-            "LastDelivery": "1 day",
             "reviewsCount": 115
         },
         "gig": {
@@ -370,29 +359,27 @@
     },
     {
         "buyer": {
-            "fullName": "user",
-            "password": "user",
-            "username": "tatianalampe9",
+            "fullName": "John",
+            "password": "1234",
+            "username": "itsjhonhere",
             "_id": "6429672497371f8f70dfc34e",
-            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925718/samples/animals/cat.jpg",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680024290/1C0FFFF2-4EBD-4DB8-A69A-6CAC1E0FD058_rtawds.webp",
             "from": "United States",
-            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
             "isSeller": false
         },
         "seller": {
-            "fullName": "admin",
-            "password": "admin",
+            "fullName": "Nicerr",
+            "password": "1234",
             "username": "itximtiazz",
-            "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+            "_id": "642968d94d726088d06d30ef",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026368/petval-2_j7jzcv.webp",
             "level": 2,
             "score": 5,
             "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
             "from": "United States",
             "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
-            "responseTime": "1 hour",
-            "MemberSince": "Mar 2020",
             "isSeller": true,
-            "LastDelivery": "1 day",
             "reviewsCount": 115
         },
         "gig": {
@@ -555,13 +542,13 @@
     },
     {
         "buyer": {
-            "fullName": "user",
-            "password": "user",
-            "username": "winny_writer",
+            "fullName": "John",
+            "password": "1234",
+            "username": "itsjhonhere",
             "_id": "6429672497371f8f70dfc34e",
-            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014788/7b328e0e-e99a-4504-bde9-3ae9cd115341_oswrvw.jpg",
-            "from": "Canada",
-            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680353742/1f1e8-1f1e6_x4v2ai.png",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680024290/1C0FFFF2-4EBD-4DB8-A69A-6CAC1E0FD058_rtawds.webp",
+            "from": "United States",
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
             "isSeller": false
         },
         "seller": {
@@ -649,13 +636,13 @@
     },
     {
         "buyer": {
-            "fullName": "user",
-            "password": "user",
-            "username": "jgwilsonri",
+            "fullName": "John",
+            "password": "1234",
+            "username": "itsjhonhere",
             "_id": "6429672497371f8f70dfc34e",
-            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680354210/d013f610-321b-42f6-9aae-410501655887_hcfz5y.jpg",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680024290/1C0FFFF2-4EBD-4DB8-A69A-6CAC1E0FD058_rtawds.webp",
             "from": "United States",
-            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
             "isSeller": false
         },
         "seller": {
