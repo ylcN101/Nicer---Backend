@@ -19,7 +19,7 @@
             "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347271/wallet-share-seo-sheet_whtshe.png"
         ],
         "owner": {
-            "fullName": "Nicerr",
+            "fullname": "Nicerr",
             "password": "1234",
             "username": "itximtiazz",
             "_id": "642968d94d726088d06d30ef",
@@ -98,7 +98,7 @@
             "https://res.cloudinary.com/dzcangpqd/image/upload/v1680348141/noahsebastian_nihn5t.png"
         ],
         "owner": {
-            "fullName": "Nicerr",
+            "fullname": "Nicerr",
             "password": "1234",
             "username": "itximtiazz",
             "_id": "642968d94d726088d06d30ef",
@@ -130,7 +130,7 @@
             "https://res.cloudinary.com/dzcangpqd/image/upload/v1680349353/fx_mocwi0.png"
         ],
         "owner": {
-            "fullName": "Nicerr",
+            "fullname": "Nicerr",
             "password": "1234",
             "username": "itximtiazz",
             "_id": "642968d94d726088d06d30ef",
@@ -248,7 +248,7 @@
             "https://res.cloudinary.com/dzcangpqd/image/upload/v1680349353/fx_mocwi0.png"
         ],
         "owner": {
-            "fullName": "admin",
+            "fullname": "admin",
             "password": "admin",
             "username": "itximtiazz",
             "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
@@ -319,7 +319,7 @@
         ],
         "daysToDeliver": 3,
         "owner": {
-            "fullName": "Sophie Smith",
+            "fullname": "Sophie Smith",
             "password": "password123",
             "username": "sophiedesigns",
             "imgUrl": "https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_1280.png",
@@ -344,7 +344,7 @@
         ],
         "daysToDeliver": 5,
         "owner": {
-            "fullName": "Emily Johnson",
+            "fullname": "Emily Johnson",
             "password": "123456",
             "username": "emilyvideoeditor",
             "imgUrl": "https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429_1280.png",
@@ -370,7 +370,7 @@
         ],
         "daysToDeliver": 3,
         "owner": {
-            "fullName": "John Smith",
+            "fullname": "John Smith",
             "password": "password123",
             "username": "johncvwriter",
             "imgUrl": "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png",
@@ -396,7 +396,7 @@
         ],
         "daysToDeliver": 3,
         "owner": {
-            "fullName": "Jessica Kim",
+            "fullname": "Jessica Kim",
             "password": "mypassword",
             "username": "jessicakimdesigns",
             "imgUrl": "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png",
@@ -423,7 +423,7 @@
         ],
         "daysToDeliver": 2,
         "owner": {
-            "fullName": "Maria Rodriguez",
+            "fullname": "Maria Rodriguez",
             "password": "pass123",
             "username": "mariarodriguez",
             "imgUrl": "https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png",
@@ -449,7 +449,7 @@
         ],
         "daysToDeliver": 3,
         "owner": {
-            "fullName": "Alice Williams",
+            "fullname": "Alice Williams",
             "password": "pass123",
             "username": "itsMeYaron",
             "imgUrl": "https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_1280.png",
@@ -475,7 +475,7 @@
         ],
         "daysToDeliver": 5,
         "owner": {
-            "fullName": "John Smith",
+            "fullname": "John Smith",
             "password": "pass456",
             "username": "theRealSlimShady",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
@@ -500,7 +500,7 @@
         ],
         "daysToDeliver": 3,
         "owner": {
-            "fullName": "Alice Williams",
+            "fullname": "Alice Williams",
             "password": "pass123",
             "username": "awilliams",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346478/E8DB65D5-7D0F-4E13-A6DC-B4D83CB7F82F_jpqwxw.webp",
@@ -526,7 +526,7 @@
         ],
         "daysToDeliver": 5,
         "owner": {
-            "fullName": "John Smith",
+            "fullname": "John Smith",
             "password": "pass456",
             "username": "jsmith",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680349339/fx_qgujld.png",
@@ -551,7 +551,7 @@
         ],
         "daysToDeliver": 7,
         "owner": {
-            "fullName": "Nicerr",
+            "fullname": "Nicerr",
             "password": "1234",
             "username": "itximtiazz",
             "_id": "642968d94d726088d06d30ef",
@@ -578,7 +578,7 @@
         ],
         "daysToDeliver": 3,
         "owner": {
-            "fullName": "Sarah Johnson",
+            "fullname": "Sarah Johnson",
             "password": "mypassword",
             "username": "sarahdesigns",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680350193/73_mdfscd.jpg",
@@ -605,7 +605,7 @@
         "price": 180,
         "rate": 4.8,
         "owner": {
-            "fullName": "Alex Wong",
+            "fullname": "Alex Wong",
             "username": "alexwongdev",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680349703/864c7c5e-86e4-4fbc-827d-b17b49a4217e_tofplc.webp",
             "level": 5,
@@ -629,7 +629,7 @@
         "price": 500,
         "rate": 4.7,
         "owner": {
-            "fullName": "Emily Green",
+            "fullname": "Emily Green",
             "username": "emilygreen",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680353776/EDE90C5F-324C-4E1D-B553-2EA2C1CD8DC1_kaac1v.webp",
             "level": 4,
@@ -653,7 +653,7 @@
         "price": 500,
         "rate": 4.7,
         "owner": {
-            "fullName": "Emily Green",
+            "fullname": "Emily Green",
             "username": "emilygreen",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680675480/social-media-management-owner-image_gvw7kw.jpg",
             "level": 4,
@@ -680,7 +680,7 @@
         "price": 250,
         "rate": 4.9,
         "owner": {
-            "fullName": "Maggie Lee",
+            "fullname": "Maggie Lee",
             "username": "maggieleedesign",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680369322/0_xdqcic.jpg",
             "level": 5,
@@ -708,7 +708,7 @@
         "price": 300,
         "rate": 4.7,
         "owner": {
-            "fullName": "Amanda Brown",
+            "fullname": "Amanda Brown",
             "username": "amandabrownwriting",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680456456/amm_tfqqst.png",
             "level": 4,
@@ -738,7 +738,7 @@
         "price": 800,
         "rate": 4.9,
         "owner": {
-            "fullName": "David Kim",
+            "fullname": "David Kim",
             "username": "davidkimdesign",
             "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680349340/Untitled_design_lswhaf.png",
             "level": 5,
