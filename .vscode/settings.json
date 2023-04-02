@@ -18,5 +18,8 @@
         "titleBar.inactiveBackground": "#3d39d499",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#3d39d4"
+    "peacock.color": "#3d39d4",
+    "cSpell.ignoreWords": [
+        "sophiedesigns"
+    ]
 }
