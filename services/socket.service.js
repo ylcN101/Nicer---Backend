@@ -1,128 +1,128 @@
-const logger = require('./logger.service')
+const logger = require("./logger.service");
 
-var gIo = null
+var gIo = null;
 
-const msgs = []
+const msgs = [];
 
 function setupSocketAPI(http) {
-  gIo = require('socket.io')(http, {
+  gIo = require("socket.io")(http, {
     cors: {
-      origin: '*',
+      origin: "*",
     },
-  })
-  gIo.on('connection', (socket) => {
-    logger.info(`New connected socket [id: ${socket.id}]`)
+  });
+  gIo.on("connection", (socket) => {
+    logger.info(`New connected socket [id: ${socket.id}]`);
 
-    socket.on('set-user-socket', (userId) => {
-      socket.userId = userId
-      logger.info(`Socket ${socket.id} is now connected to user ${userId}`)
-    })
+    socket.on("set-user-socket", (userId) => {
+      socket.userId = userId;
+      logger.info(`Socket ${socket.id} is now connected to user ${userId}`);
+    });
 
-    socket.on('chat-set-topic', (topic) => {
-      if (socket.myTopic === topic) return
+    socket.on("chat-set-topic", (topic) => {
+      if (socket.myTopic === topic) return;
       if (socket.myTopic) {
-        socket.leave(socket.myTopic)
+        socket.leave(socket.myTopic);
         logger.info(
           `Socket is leaving topic ${socket.myTopic} [id: ${socket.id}]`
-        )
+        );
       }
-      socket.myTopic = topic
+      socket.myTopic = topic;
       socket.emit(
-        'chat-history',
+        "chat-history",
         msgs.filter((msg) => msg.myTopic === socket.myTopic)
-      )
-      socket.join(topic)
-      return
-    })
+      );
+      socket.join(topic);
+      return;
+    });
 
-    socket.on('join-chat', (nickname) => {
-      socket.nickname = nickname
-      socket.isNew = true
+    socket.on("join-chat", (nickname) => {
+      socket.nickname = nickname;
+      socket.isNew = true;
 
-      logger.info(`${socket.nickname} joined a chat - [id: ${socket.id}]`)
+      logger.info(`${socket.nickname} joined a chat - [id: ${socket.id}]`);
 
-      return
-    })
+      return;
+    });
 
-    socket.on('user-watch', async (user) => {
+    socket.on("user-watch", async (user) => {
       logger.info(
         `user-watch from socket [id: ${socket.id}], on user ${user.username}`
-      )
-      socket.join('watching:' + user.username)
+      );
+      socket.join("watching:" + user.username);
 
-      const toSocket = await _getUserSocket(user._id)
+      const toSocket = await _getUserSocket(user._id);
       if (toSocket)
         toSocket.emit(
-          'user-is-watching',
+          "user-is-watching",
           `Hey ${user.username}! A user is watching your gig right now.`
-        )
-      return
-    })
+        );
+      return;
+    });
 
-    socket.on('gig-ordered', async (gig) => {
+    socket.on("gig-ordered", async (gig) => {
       logger.info(
         `gig-ordered from socket [id: ${socket.id}], on gig ${gig._id}`
-      )
-      socket.join('watching:' + gig.owner.username)
+      );
+      socket.join("watching:" + gig.owner.username);
       socket.emit(
-        'order-approved',
+        "order-approved",
         `Hey ${socket.username}! \nYour order is being processed. stay tuned.`
-      )
+      );
 
-      const toSocket = await _getUserSocket(gig.owner._id)
+      const toSocket = await _getUserSocket(gig.owner._id);
       if (toSocket)
         toSocket.emit(
-          'user-ordered-gig',
+          "user-ordered-gig",
           `Hey ${gig.owner.username}! \nA user has just ordered one of your gigs right now.`
-        )
-      return
-    })
+        );
+      return;
+    });
 
-    socket.on('order-change-status', async (buyer) => {
+    socket.on("order-change-status", async (buyer) => {
       logger.info(
         `order-change-status from socket [id: ${socket.id}], on user ${buyer.username}`
-      )
-      socket.join('watching:' + buyer.username)
+      );
+      socket.join("watching:" + buyer.username);
 
-      const toSocket = await _getUserSocket(buyer._id)
+      const toSocket = await _getUserSocket(buyer._id);
       if (toSocket)
         toSocket.emit(
-          'order-status-changed',
+          "order-status-changed",
           `Hey ${buyer.username}! \nYour order status has been changed.`
-        )
+        );
 
-      return
-    })
+      return;
+    });
 
-    socket.on('unset-user-socket', () => {
-      logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
-      delete socket.userId
-      return
-    })
+    socket.on("unset-user-socket", () => {
+      logger.info(`Removing socket.userId for socket [id: ${socket.id}]`);
+      delete socket.userId;
+      return;
+    });
 
-    socket.userId = socket.on('disconnect', (socket) => {
-      logger.info(`Socket disconnected [id: ${socket.id}]`)
-    })
-  })
+    socket.userId = socket.on("disconnect", (socket) => {
+      logger.info(`Socket disconnected [id: ${socket.id}]`);
+    });
+  });
 }
 
 function emitTo({ type, data, label }) {
-  if (label) gIo.to('watching:' + label.toString()).emit(type, data)
-  else gIo.emit(type, data)
+  if (label) gIo.to("watching:" + label.toString()).emit(type, data);
+  else gIo.emit(type, data);
 }
 
 async function emitToUser({ type, data, userId }) {
-  userId = userId.toString()
-  console.log('userId', userId)
-  const socket = await _getUserSocket(userId)
+  // userId = userId.toString()
+  console.log("userId", userId);
+  const socket = await _getUserSocket(userId);
 
   if (socket) {
     logger.info(
       `Emiting event: ${type} to user: ${userId} socket [id: ${socket.id}]`
-    )
-    socket.emit(type, data)
+    );
+    socket.emit(type, data);
   } else {
-    logger.info(`No active socket for user: ${userId}`)
+    logger.info(`No active socket for user: ${userId}`);
     // _printSockets()
   }
 }
@@ -130,56 +130,56 @@ async function emitToUser({ type, data, userId }) {
 // If possible, send to all sockets BUT not the current socket
 // Optionally, broadcast to a room / to all
 async function broadcast({ type, data, room = null, userId }) {
-  userId = userId.toString()
+  userId = userId.toString();
 
-  logger.info(`Broadcasting event: ${type}`)
-  const excludedSocket = await _getUserSocket(userId)
+  logger.info(`Broadcasting event: ${type}`);
+  const excludedSocket = await _getUserSocket(userId);
   if (room && excludedSocket) {
-    logger.info(`Broadcast to room ${room} excluding user: ${userId}`)
-    excludedSocket.broadcast.to(room).emit(type, data)
+    logger.info(`Broadcast to room ${room} excluding user: ${userId}`);
+    excludedSocket.broadcast.to(room).emit(type, data);
   } else if (excludedSocket) {
-    logger.info(`Broadcast to all excluding user: ${userId}`)
-    excludedSocket.broadcast.emit(type, data)
+    logger.info(`Broadcast to all excluding user: ${userId}`);
+    excludedSocket.broadcast.emit(type, data);
   } else if (room) {
-    logger.info(`Emit to room: ${room}`)
-    gIo.to(room).emit(type, data)
+    logger.info(`Emit to room: ${room}`);
+    gIo.to(room).emit(type, data);
   } else {
-    logger.info(`Emit to all`)
-    gIo.emit(type, data)
+    logger.info(`Emit to all`);
+    gIo.emit(type, data);
   }
 }
 async function broadcastUserUpdate({ productName, type, userId }) {
   return broadcast({
-    type: 'admin-update',
+    type: "admin-update",
     data: _getUserMsg(productName, type),
     userId: userId,
-  })
+  });
 }
 
 function _getUserMsg(type) {
-  let suffix = 'go check it out!'
-  if (type === 'remove') suffix = 'it is no longer available.'
-  return `Yuval has accepted your order!`
+  let suffix = "go check it out!";
+  if (type === "remove") suffix = "it is no longer available.";
+  return `Yuval has accepted your order!`;
 }
 
 async function _getUserSocket(userId) {
-  const sockets = await _getAllSockets()
-  const socket = sockets.find((s) => s.userId === userId)
-  return socket
+  const sockets = await _getAllSockets();
+  const socket = sockets.find((s) => s.userId === userId);
+  return socket;
 }
 async function _getAllSockets() {
   // return all Socket instances
-  const sockets = await gIo.fetchSockets()
-  return sockets
+  const sockets = await gIo.fetchSockets();
+  return sockets;
 }
 
 async function _printSockets() {
-  const sockets = await _getAllSockets()
-  console.log(`Sockets: (count: ${sockets.length}):`)
-  sockets.forEach(_printSocket)
+  const sockets = await _getAllSockets();
+  console.log(`Sockets: (count: ${sockets.length}):`);
+  sockets.forEach(_printSocket);
 }
 function _printSocket(socket) {
-  console.log(`Socket - socketId: ${socket.id} userId: ${socket.userId}`)
+  console.log(`Socket - socketId: ${socket.id} userId: ${socket.userId}`);
 }
 
 module.exports = {
@@ -193,4 +193,4 @@ module.exports = {
   // (otherwise broadcast to a room / to all)
   broadcast,
   broadcastUserUpdate,
-}
+};
