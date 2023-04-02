@@ -725,5 +725,648 @@
             "price": 250,
             "rate": 5
         }
-    }
+    ],
+    "price": 22,
+    "rate": 5
+}
+},
+{
+"buyer": {
+    "fullName": "user",
+    "password": "user",
+    "username": "airbornesnow",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680350193/73_mdfscd.jpg",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "isSeller": false
+},
+"seller": {
+    "fullName": "admin",
+    "password": "admin",
+    "username": "leitchsteve",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026371/7e725954-a185-416c-9d73-cae11b4ec8ed_imsvrp.webp",
+    "level": 2,
+    "score": 5,
+    "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "responseTime": "1 hour",
+    "MemberSince": "Mar 2020",
+    "isSeller": true,
+    "LastDelivery": "1 day",
+    "reviewsCount": 115
+},
+"gig": {
+    "boughtAt": 1680195034385,
+    "status": "rejected",
+    "title": "I will design, revamp, or optimize your linkedin profile",
+    "categories": "['voice over']",
+    "daysToDeliver": 1,
+    "description": "Welcome to my Photoshop editing gig! I am a professional graphic designer with extensive experience in using Adobe Photoshop to create high-quality images for a variety of purposes. My services include: Background removal and replacement Image resizing and cropping Color correction and enhancement Adding or removing objects from an image Image retouching and restoration Photo manipulation and composite images Whether you need a simple image resize or a complex photo manipulation, I have the skills and expertise to provide you with exceptional results. I take pride in my work and strive to ensure that all of my clients are satisfied with the final product.Please feel free to contact me if you have any questions or specific requirements for your project. I look forward to working with you and bringing your images to life with the power of Photoshop!",
+    "images": [
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/1b3c883f4b9ce97ce542f592ba893fe5e85263b2_xyqdx6.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/wix-website-design-gordon-homepage_lxksjv.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/db262a483cc4a4c4567e7078d1291570e89a9f86_xkgxnt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-ee-home_c8gsik.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-kcj-book-signing_lb99rc.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-alma-home_p55bla.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-dd-homepage_taogdt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-eddies-yard-lawncare_kwb7ob.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-bola-size-guide_1_zdbaim.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347271/wallet-share-seo-sheet_whtshe.png"
+    ],
+    "reviews": [
+        {
+            "Name": "hawkinsfitness",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026375/ig7e8qcr6ozvri62f4or_zharyr.jpg",
+            "Country": "Germany",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680304441/1f1e9-1f1ea_fzvczh.png",
+            "Txt": "Thanks Imtiaz for our website. It has been a pleasure working with Imtiaz. He is an expert at what he does, amazing and super patient. He took my website from zero to nothing short of amazing. He is reliable and did absolutely everything above"
+        },
+        {
+            "Name": "kenniemorancy",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "HE IS LITERALLY THE BEST. Anything you need done, he can do it. Top tier communication, beautiful visuals and quick turn around. I will be sure to refer him to others."
+        },
+        {
+            "Name": "lmacaaa1",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925739/cld-sample.jpg",
+            "Country": "Belgium",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680345890/1f1e7-1f1ea_n6jjwa.png",
+            "Txt": "It was a very good experience, he delivered a very good, professional website.I will definitely come back in the future!!"
+        },
+        {
+            "Name": "shavon_williams",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680008853/user1/img4_udwrru.png",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "Franz did an amazing job with creating my logos with the matching social media kit and stationary. I would recommend him to anyone and have already shared his information with someone who asked. Responds in a timely manner and provides everything that you ask for. I couldn't be happier"
+        },
+        {
+            "Name": "rochanaebini",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346478/E8DB65D5-7D0F-4E13-A6DC-B4D83CB7F82F_jpqwxw.webp",
+            "Country": "United Kingdom",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346477/1f1ec-1f1e7_vxjm9w.png",
+            "Txt": "Victoria was great to work with. I was struggling with formatting issues on my newly created Wix website which she helped solve on both desktop & mobile."
+        }
+    ],
+    "price": 22,
+    "rate": 5
+}
+},
+{
+"buyer": {
+    "fullName": "user",
+    "password": "user",
+    "username": "airbornesnow",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680350193/73_mdfscd.jpg",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "isSeller": false
+},
+"seller": {
+    "fullName": "admin",
+    "password": "admin",
+    "username": "hyperion_tv",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680355672/JPEG_20210508_031254_836139879_kayizb.webp",
+    "level": 2,
+    "score": 5,
+    "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "responseTime": "1 hour",
+    "MemberSince": "Mar 2020",
+    "isSeller": true,
+    "LastDelivery": "1 day",
+    "reviewsCount": 115
+},
+"gig": {
+    "boughtAt": 1680195034385,
+    "status": "complete",
+    "title": "I will produce a live action lyric video for your song",
+    "categories": "['voice over']",
+    "daysToDeliver": 1,
+    "description": "Welcome to my Photoshop editing gig! I am a professional graphic designer with extensive experience in using Adobe Photoshop to create high-quality images for a variety of purposes. My services include: Background removal and replacement Image resizing and cropping Color correction and enhancement Adding or removing objects from an image Image retouching and restoration Photo manipulation and composite images Whether you need a simple image resize or a complex photo manipulation, I have the skills and expertise to provide you with exceptional results. I take pride in my work and strive to ensure that all of my clients are satisfied with the final product.Please feel free to contact me if you have any questions or specific requirements for your project. I look forward to working with you and bringing your images to life with the power of Photoshop!",
+    "images": [
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/1b3c883f4b9ce97ce542f592ba893fe5e85263b2_xyqdx6.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/wix-website-design-gordon-homepage_lxksjv.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/db262a483cc4a4c4567e7078d1291570e89a9f86_xkgxnt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-ee-home_c8gsik.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-kcj-book-signing_lb99rc.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-alma-home_p55bla.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-dd-homepage_taogdt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-eddies-yard-lawncare_kwb7ob.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-bola-size-guide_1_zdbaim.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347271/wallet-share-seo-sheet_whtshe.png"
+    ],
+    "reviews": [
+        {
+            "Name": "hawkinsfitness",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026375/ig7e8qcr6ozvri62f4or_zharyr.jpg",
+            "Country": "Germany",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680304441/1f1e9-1f1ea_fzvczh.png",
+            "Txt": "Thanks Imtiaz for our website. It has been a pleasure working with Imtiaz. He is an expert at what he does, amazing and super patient. He took my website from zero to nothing short of amazing. He is reliable and did absolutely everything above"
+        },
+        {
+            "Name": "kenniemorancy",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "HE IS LITERALLY THE BEST. Anything you need done, he can do it. Top tier communication, beautiful visuals and quick turn around. I will be sure to refer him to others."
+        },
+        {
+            "Name": "lmacaaa1",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925739/cld-sample.jpg",
+            "Country": "Belgium",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680345890/1f1e7-1f1ea_n6jjwa.png",
+            "Txt": "It was a very good experience, he delivered a very good, professional website.I will definitely come back in the future!!"
+        },
+        {
+            "Name": "shavon_williams",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680008853/user1/img4_udwrru.png",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "Franz did an amazing job with creating my logos with the matching social media kit and stationary. I would recommend him to anyone and have already shared his information with someone who asked. Responds in a timely manner and provides everything that you ask for. I couldn't be happier"
+        },
+        {
+            "Name": "rochanaebini",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346478/E8DB65D5-7D0F-4E13-A6DC-B4D83CB7F82F_jpqwxw.webp",
+            "Country": "United Kingdom",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346477/1f1ec-1f1e7_vxjm9w.png",
+            "Txt": "Victoria was great to work with. I was struggling with formatting issues on my newly created Wix website which she helped solve on both desktop & mobile."
+        }
+    ],
+    "price": 22,
+    "rate": 5
+}
+},
+{
+"buyer": {
+    "fullName": "user",
+    "password": "user",
+    "username": "airbornesnow",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680350193/73_mdfscd.jpg",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "isSeller": false
+},
+"seller": {
+    "fullName": "admin",
+    "password": "admin",
+    "username": "jonbird79",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680355379/AD7AE4EC-6F0F-46F8-8AC9-628C4F433583_j1xnqf.webp",
+    "level": 2,
+    "score": 5,
+    "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "responseTime": "1 hour",
+    "MemberSince": "Mar 2020",
+    "isSeller": true,
+    "LastDelivery": "1 day",
+    "reviewsCount": 115
+},
+"gig": {
+    "boughtAt": 1680195034385,
+    "status": "complete",
+    "title": "I will do organic spotify music promotion",
+    "categories": "['voice over']",
+    "daysToDeliver": 1,
+    "description": "Welcome to my Photoshop editing gig! I am a professional graphic designer with extensive experience in using Adobe Photoshop to create high-quality images for a variety of purposes. My services include: Background removal and replacement Image resizing and cropping Color correction and enhancement Adding or removing objects from an image Image retouching and restoration Photo manipulation and composite images Whether you need a simple image resize or a complex photo manipulation, I have the skills and expertise to provide you with exceptional results. I take pride in my work and strive to ensure that all of my clients are satisfied with the final product.Please feel free to contact me if you have any questions or specific requirements for your project. I look forward to working with you and bringing your images to life with the power of Photoshop!",
+    "images": [
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/1b3c883f4b9ce97ce542f592ba893fe5e85263b2_xyqdx6.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/wix-website-design-gordon-homepage_lxksjv.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/db262a483cc4a4c4567e7078d1291570e89a9f86_xkgxnt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-ee-home_c8gsik.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-kcj-book-signing_lb99rc.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-alma-home_p55bla.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-dd-homepage_taogdt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-eddies-yard-lawncare_kwb7ob.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-bola-size-guide_1_zdbaim.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347271/wallet-share-seo-sheet_whtshe.png"
+    ],
+    "reviews": [
+        {
+            "Name": "hawkinsfitness",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026375/ig7e8qcr6ozvri62f4or_zharyr.jpg",
+            "Country": "Germany",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680304441/1f1e9-1f1ea_fzvczh.png",
+            "Txt": "Thanks Imtiaz for our website. It has been a pleasure working with Imtiaz. He is an expert at what he does, amazing and super patient. He took my website from zero to nothing short of amazing. He is reliable and did absolutely everything above"
+        },
+        {
+            "Name": "kenniemorancy",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "HE IS LITERALLY THE BEST. Anything you need done, he can do it. Top tier communication, beautiful visuals and quick turn around. I will be sure to refer him to others."
+        },
+        {
+            "Name": "lmacaaa1",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925739/cld-sample.jpg",
+            "Country": "Belgium",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680345890/1f1e7-1f1ea_n6jjwa.png",
+            "Txt": "It was a very good experience, he delivered a very good, professional website.I will definitely come back in the future!!"
+        },
+        {
+            "Name": "shavon_williams",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680008853/user1/img4_udwrru.png",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "Franz did an amazing job with creating my logos with the matching social media kit and stationary. I would recommend him to anyone and have already shared his information with someone who asked. Responds in a timely manner and provides everything that you ask for. I couldn't be happier"
+        },
+        {
+            "Name": "rochanaebini",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346478/E8DB65D5-7D0F-4E13-A6DC-B4D83CB7F82F_jpqwxw.webp",
+            "Country": "United Kingdom",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346477/1f1ec-1f1e7_vxjm9w.png",
+            "Txt": "Victoria was great to work with. I was struggling with formatting issues on my newly created Wix website which she helped solve on both desktop & mobile."
+        }
+    ],
+    "price": 22,
+    "rate": 5
+}
+},
+{
+"buyer": {
+    "fullName": "user",
+    "password": "user",
+    "username": "tatianalampe9",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925718/samples/animals/cat.jpg",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+    "isSeller": false
+},
+"seller": {
+    "fullName": "admin",
+    "password": "admin",
+    "username": "itximtiazz",
+    "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+    "level": 2,
+    "score": 5,
+    "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "responseTime": "1 hour",
+    "MemberSince": "Mar 2020",
+    "isSeller": true,
+    "LastDelivery": "1 day",
+    "reviewsCount": 115
+},
+"gig": {
+    "boughtAt": 1680195033485,
+    "status": "complete",
+    "title": "I will do professional photoshop editing in 2 hours",
+    "categories": "['voice over']",
+    "daysToDeliver": 1,
+    "description": "Welcome to my Photoshop editing gig! I am a professional graphic designer with extensive experience in using Adobe Photoshop to create high-quality images for a variety of purposes. My services include: Background removal and replacement Image resizing and cropping Color correction and enhancement Adding or removing objects from an image Image retouching and restoration Photo manipulation and composite images Whether you need a simple image resize or a complex photo manipulation, I have the skills and expertise to provide you with exceptional results. I take pride in my work and strive to ensure that all of my clients are satisfied with the final product.Please feel free to contact me if you have any questions or specific requirements for your project. I look forward to working with you and bringing your images to life with the power of Photoshop!",
+    "images": [
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/1b3c883f4b9ce97ce542f592ba893fe5e85263b2_xyqdx6.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/wix-website-design-gordon-homepage_lxksjv.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/db262a483cc4a4c4567e7078d1291570e89a9f86_xkgxnt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-ee-home_c8gsik.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-kcj-book-signing_lb99rc.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-alma-home_p55bla.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-dd-homepage_taogdt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-eddies-yard-lawncare_kwb7ob.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-bola-size-guide_1_zdbaim.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347271/wallet-share-seo-sheet_whtshe.png"
+    ],
+    "reviews": [
+        {
+            "Name": "hawkinsfitness",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026375/ig7e8qcr6ozvri62f4or_zharyr.jpg",
+            "Country": "Germany",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680304441/1f1e9-1f1ea_fzvczh.png",
+            "Txt": "Thanks Imtiaz for our website. It has been a pleasure working with Imtiaz. He is an expert at what he does, amazing and super patient. He took my website from zero to nothing short of amazing. He is reliable and did absolutely everything above"
+        },
+        {
+            "Name": "kenniemorancy",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "HE IS LITERALLY THE BEST. Anything you need done, he can do it. Top tier communication, beautiful visuals and quick turn around. I will be sure to refer him to others."
+        },
+        {
+            "Name": "lmacaaa1",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925739/cld-sample.jpg",
+            "Country": "Belgium",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680345890/1f1e7-1f1ea_n6jjwa.png",
+            "Txt": "It was a very good experience, he delivered a very good, professional website.I will definitely come back in the future!!"
+        },
+        {
+            "Name": "shavon_williams",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680008853/user1/img4_udwrru.png",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "Franz did an amazing job with creating my logos with the matching social media kit and stationary. I would recommend him to anyone and have already shared his information with someone who asked. Responds in a timely manner and provides everything that you ask for. I couldn't be happier"
+        },
+        {
+            "Name": "rochanaebini",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346478/E8DB65D5-7D0F-4E13-A6DC-B4D83CB7F82F_jpqwxw.webp",
+            "Country": "United Kingdom",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346477/1f1ec-1f1e7_vxjm9w.png",
+            "Txt": "Victoria was great to work with. I was struggling with formatting issues on my newly created Wix website which she helped solve on both desktop & mobile."
+        }
+    ],
+    "price": 122,
+    "rate": 5
+}
+},
+{
+"buyer": {
+    "fullName": "user",
+    "password": "user",
+    "username": "vishal_sh",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680353776/EDE90C5F-324C-4E1D-B553-2EA2C1CD8DC1_kaac1v.webp",
+    "from": "Canada",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680353742/1f1e8-1f1e6_x4v2ai.png",
+    "isSeller": false
+},
+"seller": {
+    "fullName": "admin",
+    "password": "admin",
+    "username": "itximtiazz",
+    "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+    "level": 2,
+    "score": 5,
+    "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "responseTime": "1 hour",
+    "MemberSince": "Mar 2020",
+    "isSeller": true,
+    "LastDelivery": "1 day",
+    "reviewsCount": 115
+},
+"gig": {
+    "boughtAt": 1680195033485,
+    "status": "pending",
+    "title": "I will do professional photoshop image editing, photo manipulation",
+    "categories": "['voice over']",
+    "daysToDeliver": 1,
+    "description": "Welcome to my Photoshop editing gig! I am a professional graphic designer with extensive experience in using Adobe Photoshop to create high-quality images for a variety of purposes. My services include: Background removal and replacement Image resizing and cropping Color correction and enhancement Adding or removing objects from an image Image retouching and restoration Photo manipulation and composite images Whether you need a simple image resize or a complex photo manipulation, I have the skills and expertise to provide you with exceptional results. I take pride in my work and strive to ensure that all of my clients are satisfied with the final product.Please feel free to contact me if you have any questions or specific requirements for your project. I look forward to working with you and bringing your images to life with the power of Photoshop!",
+    "images": [
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/1b3c883f4b9ce97ce542f592ba893fe5e85263b2_xyqdx6.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/wix-website-design-gordon-homepage_lxksjv.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/db262a483cc4a4c4567e7078d1291570e89a9f86_xkgxnt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-ee-home_c8gsik.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-kcj-book-signing_lb99rc.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-alma-home_p55bla.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-dd-homepage_taogdt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-eddies-yard-lawncare_kwb7ob.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-bola-size-guide_1_zdbaim.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347271/wallet-share-seo-sheet_whtshe.png"
+    ],
+    "owner": {},
+    "reviews": [
+        {
+            "Name": "hawkinsfitness",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026375/ig7e8qcr6ozvri62f4or_zharyr.jpg",
+            "Country": "Germany",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680304441/1f1e9-1f1ea_fzvczh.png",
+            "Txt": "Thanks Imtiaz for our website. It has been a pleasure working with Imtiaz. He is an expert at what he does, amazing and super patient. He took my website from zero to nothing short of amazing. He is reliable and did absolutely everything above"
+        },
+        {
+            "Name": "kenniemorancy",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "HE IS LITERALLY THE BEST. Anything you need done, he can do it. Top tier communication, beautiful visuals and quick turn around. I will be sure to refer him to others."
+        },
+        {
+            "Name": "lmacaaa1",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925739/cld-sample.jpg",
+            "Country": "Belgium",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680345890/1f1e7-1f1ea_n6jjwa.png",
+            "Txt": "It was a very good experience, he delivered a very good, professional website.I will definitely come back in the future!!"
+        },
+        {
+            "Name": "shavon_williams",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680008853/user1/img4_udwrru.png",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "Franz did an amazing job with creating my logos with the matching social media kit and stationary. I would recommend him to anyone and have already shared his information with someone who asked. Responds in a timely manner and provides everything that you ask for. I couldn't be happier"
+        },
+        {
+            "Name": "rochanaebini",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346478/E8DB65D5-7D0F-4E13-A6DC-B4D83CB7F82F_jpqwxw.webp",
+            "Country": "United Kingdom",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346477/1f1ec-1f1e7_vxjm9w.png",
+            "Txt": "Victoria was great to work with. I was struggling with formatting issues on my newly created Wix website which she helped solve on both desktop & mobile."
+        }
+    ],
+    "price": 562,
+    "rate": 5
+}
+},
+{
+"buyer": {
+    "fullName": "user",
+    "password": "user",
+    "username": "winny_writer",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014788/7b328e0e-e99a-4504-bde9-3ae9cd115341_oswrvw.jpg",
+    "from": "Canada",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680353742/1f1e8-1f1e6_x4v2ai.png",
+    "isSeller": false
+},
+"seller": {
+    "fullName": "admin",
+    "password": "admin",
+    "username": "itximtiazz",
+    "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+    "level": 2,
+    "score": 5,
+    "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "responseTime": "1 hour",
+    "MemberSince": "Mar 2020",
+    "isSeller": true,
+    "LastDelivery": "1 day",
+    "reviewsCount": 115
+},
+"gig": {
+    "boughtAt": 1680195013485,
+    "status": "rejected",
+    "title": "I will create website for your company so you can be more professional",
+    "categories": "['digital',wordpress]",
+    "daysToDeliver": 1,
+    "description": "Welcome to my Photoshop editing gig! I am a professional graphic designer with extensive experience in using Adobe Photoshop to create high-quality images for a variety of purposes. My services include: Background removal and replacement Image resizing and cropping Color correction and enhancement Adding or removing objects from an image Image retouching and restoration Photo manipulation and composite images Whether you need a simple image resize or a complex photo manipulation, I have the skills and expertise to provide you with exceptional results. I take pride in my work and strive to ensure that all of my clients are satisfied with the final product.Please feel free to contact me if you have any questions or specific requirements for your project. I look forward to working with you and bringing your images to life with the power of Photoshop!",
+    "images": [
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/1b3c883f4b9ce97ce542f592ba893fe5e85263b2_xyqdx6.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/wix-website-design-gordon-homepage_lxksjv.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/db262a483cc4a4c4567e7078d1291570e89a9f86_xkgxnt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-ee-home_c8gsik.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-kcj-book-signing_lb99rc.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-alma-home_p55bla.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-dd-homepage_taogdt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-eddies-yard-lawncare_kwb7ob.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-bola-size-guide_1_zdbaim.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347271/wallet-share-seo-sheet_whtshe.png"
+    ],
+    "owner": {},
+    "reviews": [
+        {
+            "Name": "hawkinsfitness",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026375/ig7e8qcr6ozvri62f4or_zharyr.jpg",
+            "Country": "Germany",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680304441/1f1e9-1f1ea_fzvczh.png",
+            "Txt": "Thanks Imtiaz for our website. It has been a pleasure working with Imtiaz. He is an expert at what he does, amazing and super patient. He took my website from zero to nothing short of amazing. He is reliable and did absolutely everything above"
+        },
+        {
+            "Name": "kenniemorancy",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "HE IS LITERALLY THE BEST. Anything you need done, he can do it. Top tier communication, beautiful visuals and quick turn around. I will be sure to refer him to others."
+        },
+        {
+            "Name": "lmacaaa1",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925739/cld-sample.jpg",
+            "Country": "Belgium",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680345890/1f1e7-1f1ea_n6jjwa.png",
+            "Txt": "It was a very good experience, he delivered a very good, professional website.I will definitely come back in the future!!"
+        },
+        {
+            "Name": "shavon_williams",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680008853/user1/img4_udwrru.png",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "Franz did an amazing job with creating my logos with the matching social media kit and stationary. I would recommend him to anyone and have already shared his information with someone who asked. Responds in a timely manner and provides everything that you ask for. I couldn't be happier"
+        },
+        {
+            "Name": "rochanaebini",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346478/E8DB65D5-7D0F-4E13-A6DC-B4D83CB7F82F_jpqwxw.webp",
+            "Country": "United Kingdom",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346477/1f1ec-1f1e7_vxjm9w.png",
+            "Txt": "Victoria was great to work with. I was struggling with formatting issues on my newly created Wix website which she helped solve on both desktop & mobile."
+        }
+    ],
+    "price": 132,
+    "rate": 5
+}
+},
+{
+"buyer": {
+    "fullName": "user",
+    "password": "user",
+    "username": "jgwilsonri",
+    "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680354210/d013f610-321b-42f6-9aae-410501655887_hcfz5y.jpg",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+    "isSeller": false
+},
+"seller": {
+    "fullName": "admin",
+    "password": "admin",
+    "username": "itximtiazz",
+    "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
+    "level": 2,
+    "score": 5,
+    "txt": "Hi, I'm Imtiaz owner of web development agency. We'll put our strategic mind to work and to take your business to the top level! With more than 9 years of experience in WordPress websites, Ecommerce website design and development, We know what kind of business websites, eCommerce stores drive sales and can make your online business venture successful! We Build Purposeful, Engaging, Creative & Responsive Websites. I'm a WordPress Kung-fu and eCommerce Ninja! I'll help you to make your online business profitable and It'll surely change your life. Let's talk & Get Your Website Online Together!",
+    "from": "United States",
+    "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+    "responseTime": "1 hour",
+    "MemberSince": "Mar 2020",
+    "isSeller": true,
+    "LastDelivery": "1 day",
+    "reviewsCount": 115
+},
+"gig": {
+    "boughtAt": 1680195013485,
+    "status": "complete",
+    "title": "I will write your effective spotify pitch",
+    "categories": "['digital','music']",
+    "daysToDeliver": 1,
+    "description": "Welcome to my Photoshop editing gig! I am a professional graphic designer with extensive experience in using Adobe Photoshop to create high-quality images for a variety of purposes. My services include: Background removal and replacement Image resizing and cropping Color correction and enhancement Adding or removing objects from an image Image retouching and restoration Photo manipulation and composite images Whether you need a simple image resize or a complex photo manipulation, I have the skills and expertise to provide you with exceptional results. I take pride in my work and strive to ensure that all of my clients are satisfied with the final product.Please feel free to contact me if you have any questions or specific requirements for your project. I look forward to working with you and bringing your images to life with the power of Photoshop!",
+    "images": [
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/1b3c883f4b9ce97ce542f592ba893fe5e85263b2_xyqdx6.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/wix-website-design-gordon-homepage_lxksjv.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347273/db262a483cc4a4c4567e7078d1291570e89a9f86_xkgxnt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-ee-home_c8gsik.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-kcj-book-signing_lb99rc.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-alma-home_p55bla.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-dd-homepage_taogdt.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-eddies-yard-lawncare_kwb7ob.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347272/wix-website-design-bola-size-guide_1_zdbaim.png",
+        "https://res.cloudinary.com/dzcangpqd/image/upload/v1680347271/wallet-share-seo-sheet_whtshe.png"
+    ],
+    "reviews": [
+        {
+            "Name": "hawkinsfitness",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680026375/ig7e8qcr6ozvri62f4or_zharyr.jpg",
+            "Country": "Germany",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680304441/1f1e9-1f1ea_fzvczh.png",
+            "Txt": "Thanks Imtiaz for our website. It has been a pleasure working with Imtiaz. He is an expert at what he does, amazing and super patient. He took my website from zero to nothing short of amazing. He is reliable and did absolutely everything above"
+        },
+        {
+            "Name": "kenniemorancy",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680014786/65b1b4ab-926d-46be-95d0-fe3ebeb2e61f_lnlwu5.jpg",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "HE IS LITERALLY THE BEST. Anything you need done, he can do it. Top tier communication, beautiful visuals and quick turn around. I will be sure to refer him to others."
+        },
+        {
+            "Name": "lmacaaa1",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1679925739/cld-sample.jpg",
+            "Country": "Belgium",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680345890/1f1e7-1f1ea_n6jjwa.png",
+            "Txt": "It was a very good experience, he delivered a very good, professional website.I will definitely come back in the future!!"
+        },
+        {
+            "Name": "shavon_williams",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680008853/user1/img4_udwrru.png",
+            "Country": "United States",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680012726/1f1fa-1f1f8_dxvj1l.png",
+            "Txt": "Franz did an amazing job with creating my logos with the matching social media kit and stationary. I would recommend him to anyone and have already shared his information with someone who asked. Responds in a timely manner and provides everything that you ask for. I couldn't be happier"
+        },
+        {
+            "Name": "rochanaebini",
+            "imgUrl": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346478/E8DB65D5-7D0F-4E13-A6DC-B4D83CB7F82F_jpqwxw.webp",
+            "Country": "United Kingdom",
+            "Rate": 5,
+            "CountryFlag": "https://res.cloudinary.com/dzcangpqd/image/upload/v1680346477/1f1ec-1f1e7_vxjm9w.png",
+            "Txt": "Victoria was great to work with. I was struggling with formatting issues on my newly created Wix website which she helped solve on both desktop & mobile."
+        }
+    ],
+    "price": 250,
+    "rate": 5
+}
+}
 ]

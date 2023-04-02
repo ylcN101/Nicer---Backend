@@ -80,16 +80,17 @@ function setupSocketAPI(http) {
 
     socket.on('order-change-status', async (buyer) => {
       logger.info(
-        `Change order's status by socket [id: ${socket.id}], for buyer ${buyer._id}`
+        `order-change-status from socket [id: ${socket.id}], on user ${buyer.username}`
       )
       socket.join('watching:' + buyer.username)
 
       const toSocket = await _getUserSocket(buyer._id)
       if (toSocket)
         toSocket.emit(
-          'order-status-update',
-          `Hey ${buyer.username}! \nYour order's status has been changed.`
+          'order-status-changed',
+          `Hey ${buyer.username}! \nYour order status has been changed.`
         )
+
       return
     })
 
