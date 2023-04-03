@@ -44,7 +44,7 @@ function setupSocketAPI(http) {
       return
     })
 
-    socket.on('user-watch', async (user) => {
+    socket.on('gig-viewed', async (user) => {
       logger.info(
         `user-watch from socket [id: ${socket.id}], on user ${user.username}`
       )
@@ -53,7 +53,7 @@ function setupSocketAPI(http) {
       const toSocket = await _getUserSocket(user._id)
       if (toSocket)
         toSocket.emit(
-          'user-is-watching',
+          'gig-viewed',
           `Hey ${user.username}! A user is watching your gig right now.`
         )
       return
@@ -78,7 +78,7 @@ function setupSocketAPI(http) {
       return
     })
 
-    socket.on('order-change-status', async (buyer) => {
+    socket.on('order-status-changed', async (buyer) => {
       logger.info(
         `order-change-status from socket [id: ${socket.id}], on user ${buyer.username}`
       )
@@ -113,7 +113,6 @@ function emitTo({ type, data, label }) {
 
 async function emitToUser({ type, data, userId }) {
   userId = userId.toString()
-  console.log('userId', userId)
   const socket = await _getUserSocket(userId)
 
   if (socket) {
@@ -123,7 +122,7 @@ async function emitToUser({ type, data, userId }) {
     socket.emit(type, data)
   } else {
     logger.info(`No active socket for user: ${userId}`)
-    // _printSockets()
+    _printSockets()
   }
 }
 

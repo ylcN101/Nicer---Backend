@@ -47,6 +47,7 @@ async function add(order) {
     let addedOrder = await collection.insertOne(order)
     addedOrder = addedOrder.ops[0]
     addedOrder.createdAt = ObjectId(addedOrder._id).getTimestamp()
+    console.log('Socket')
     return addedOrder
   } catch (err) {
     logger.error('cannot insert order', err)
@@ -64,11 +65,11 @@ async function update(order) {
       { _id: ObjectId(order._id) },
       { $set: orderToSave }
     )
-    socketService.emitToUser({
-      type: 'order-change-status',
-      data: orderToSave,
-      userId: order.buyer._id,
-    })
+    // socketService.emitToUser({
+    //   type: 'order-status-changed',
+    //   data: orderToSave,
+    //   userId: order.buyer._id,
+    // })
 
     return orderToSave
   } catch (err) {
