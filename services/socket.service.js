@@ -59,22 +59,28 @@ function setupSocketAPI(http) {
       return
     })
 
-    socket.on('gig-ordered', async (gig) => {
+    socket.on('gig-ordered', async (order) => {
+      console.log('gig-ordered', order)
       logger.info(
-        `gig-ordered from socket [id: ${socket.id}], on gig ${gig._id}`
+        `gig-ordered from socket [id: ${socket.id}], on user ${order.buyer.username}`
       )
-      socket.join('watching:' + gig.owner.username)
-      socket.emit(
-        'order-approved',
-        `Hey ${socket.username}! \nYour order is being processed. stay tuned.`
-      )
+      socket.join('watching:' + order.buyer.username)
 
-      const toSocket = await _getUserSocket(gig.owner._id)
+      const buyerSocket = await _getUserSocket(order.buyer._id)
+      console.log('buyerSocket', buyerSocket)
+      if (buyerSocket)
+        buyerSocket.emit(
+          'gig-ordered',
+          `Hey ${order.buyer.username}! You have just ordered a gig.`
+        )
+
+      const toSocket = await _getUserSocket(order.seller._id)
       if (toSocket)
         toSocket.emit(
           'user-ordered-gig',
-          `Hey ${gig.owner.username}! \nA user has just ordered one of your gigs right now.`
+          `Hey ${order.seller.username}! A user has just ordered your gig.`
         )
+
       return
     })
 
@@ -88,7 +94,7 @@ function setupSocketAPI(http) {
       if (toSocket)
         toSocket.emit(
           'order-status-changed',
-          `Hey ${buyer.username}! \nYour order status has been changed.`
+          `Hey ${buyer.username}! Your order status has been changed.`
         )
 
       return
