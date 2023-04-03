@@ -13,7 +13,6 @@ app.use(express.json())
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.resolve(__dirname, 'public')))
-  console.log('hi')
 } else {
   const corsOptions = {
     // Make sure origin contains the url your frontend is running on
@@ -52,7 +51,6 @@ setupSocketAPI(http)
 // so when requesting http://localhost:3030/index.html/gig/123 it will still respond with
 // our SPA (single page app) (the index.html file) and allow vue/react-router to take it from there
 app.get('/**', (req, res) => {
-  console.log('hi12')
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 

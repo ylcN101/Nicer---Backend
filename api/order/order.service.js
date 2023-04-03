@@ -4,9 +4,10 @@ const utilService = require('../../services/util.service')
 const socketService = require('../../services/socket.service')
 const ObjectId = require('mongodb').ObjectId
 
-async function query(filterBy) {
+async function query(filterBy = {}) {
   try {
     const criteria = _buildCriteria(filterBy)
+
     console.log(criteria)
     const collection = await dbService.getCollection('order')
     var orders = await collection.find(criteria).toArray()
@@ -46,20 +47,6 @@ async function add(order) {
     let addedOrder = await collection.insertOne(order)
     addedOrder = addedOrder.ops[0]
     addedOrder.createdAt = ObjectId(addedOrder._id).getTimestamp()
-
-    socketService.emitToUser({
-      type: 'new-order-seller',
-      data: addedOrder,
-      userId: addedOrder.seller._id,
-    })
-    socketService.emitToUser({
-      type: 'new-order-buyer',
-      data: addedOrder,
-      userId: addedOrder.buyer._id,
-    })
-
-    console.log('addedOrder', addedOrder)
-
     return addedOrder
   } catch (err) {
     logger.error('cannot insert order', err)
@@ -70,14 +57,20 @@ async function add(order) {
 async function update(order) {
   try {
     const orderToSave = {
-      title: order.title,
+      status: order.status,
     }
     const collection = await dbService.getCollection('order')
     await collection.updateOne(
       { _id: ObjectId(order._id) },
       { $set: orderToSave }
     )
-    return order
+    socketService.emitToUser({
+      type: 'order-change-status',
+      data: orderToSave,
+      userId: order.buyer._id,
+    })
+
+    return orderToSave
   } catch (err) {
     logger.error(`cannot update order ${orderId}`, err)
     throw err
