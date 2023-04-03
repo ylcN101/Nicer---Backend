@@ -46,7 +46,7 @@ function setupSocketAPI(http) {
 
     socket.on('gig-viewed', async (user) => {
       logger.info(
-        `user-watch from socket [id: ${socket.id}], on user ${user.username}`
+        `gig-viewed from socket [id: ${socket.id}], on user ${user.username}`
       )
       socket.join('watching:' + user.username)
 
@@ -54,8 +54,9 @@ function setupSocketAPI(http) {
       if (toSocket)
         toSocket.emit(
           'gig-viewed',
-          `Hey ${user.username}! \n A user is watching your gig right now.`
+          `Hey ${user.username}! \n A user has just watching your gig.`
         )
+
       return
     })
 
