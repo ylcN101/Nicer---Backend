@@ -44,20 +44,19 @@ function setupSocketAPI(http) {
       return
     })
 
-    socket.on('gig-viewed', async (order) => {
+    socket.on('gig-viewed', async (gig) => {
+      console.log('gig-viewed', gig)
       logger.info(
-        `gig-viewed from socket [id: ${socket.id}], on user ${order.buyer.username}`
+        `gig-viewed from socket [id: ${socket.id}], on user ${gig.owner.username}`
       )
-      socket.join('watching:' + order.buyer.username)
+      socket.join('watching:' + gig.owner.username)
 
-      const toSocket = await _getUserSocket(order.seller._id)
+      const toSocket = await _getUserSocket(gig.owner._id)
       if (toSocket)
         toSocket.emit(
           'gig-viewed',
-          `Hey ${order.seller.fullname}! \n A user has just watching your gig.`
+          `Hey ${gig.owner.username}! \n A user has just viewed your gig.`
         )
-
-      return
     })
 
     socket.on('gig-ordered', async (order) => {
