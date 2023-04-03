@@ -54,7 +54,7 @@ function setupSocketAPI(http) {
       if (toSocket)
         toSocket.emit(
           'gig-viewed',
-          `Hey ${user.username}! A user is watching your gig right now.`
+          `Hey ${user.username}! \n A user is watching your gig right now.`
         )
       return
     })
@@ -71,14 +71,14 @@ function setupSocketAPI(http) {
       if (buyerSocket)
         buyerSocket.emit(
           'gig-ordered',
-          `Hey ${order.buyer.username}! You have just ordered a gig.`
+          `Hey ${order.buyer.username}! \n You have just ordered a gig.`
         )
 
       const toSocket = await _getUserSocket(order.seller._id)
       if (toSocket)
         toSocket.emit(
           'user-ordered-gig',
-          `Hey ${order.seller.username}! A user has just ordered your gig.`
+          `Hey ${order.seller.username}! \n A user has just ordered your gig.`
         )
 
       return
@@ -94,7 +94,7 @@ function setupSocketAPI(http) {
       if (toSocket)
         toSocket.emit(
           'order-status-changed',
-          `Hey ${buyer.username}! Your order status has been changed.`
+          `Hey ${buyer.username}! \n Your order status has been changed.`
         )
 
       return
