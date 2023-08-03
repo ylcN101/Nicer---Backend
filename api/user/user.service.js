@@ -17,7 +17,7 @@ async function query(filterBy = {}) {
   try {
     const collection = await dbService.getCollection('user')
     var users = await collection.find(criteria).toArray()
-    console.log('users', users)
+
     users = users.map((user) => {
       delete user.password
       user.createdAt = ObjectId(user._id).getTimestamp()
@@ -74,7 +74,6 @@ async function remove(userId) {
 }
 
 async function update(user) {
-  console.log('user updated', user)
   try {
     // pick only updatable properties
     const userToSave = {
@@ -95,7 +94,6 @@ async function update(user) {
 }
 
 async function add(user) {
-  console.log('user added', user)
   try {
     // peek only updatable fields!
     const userToAdd = {

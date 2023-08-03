@@ -6,10 +6,10 @@ const ObjectId = require("mongodb").ObjectId;
 async function query(filterBy) {
   try {
     const criteria = _buildCriteria(filterBy);
-    console.log(criteria);
+
     const collection = await dbService.getCollection("gig");
     var gigs = await collection.find(criteria).toArray();
-    console.log(gigs);
+
     return gigs;
   } catch (err) {
     logger.error("cannot find gigs", err);

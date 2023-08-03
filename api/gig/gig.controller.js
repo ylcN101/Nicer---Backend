@@ -36,7 +36,7 @@ async function getGigById(req, res) {
 async function addGig(req, res) {
   try {
     const gig = req.body;
-    console.log("gig", gig);
+  
     const addedGig = await gigService.add(gig);
     res.json(addedGig);
   } catch (err) {

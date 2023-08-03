@@ -45,7 +45,6 @@ function setupSocketAPI(http) {
     })
 
     socket.on('gig-viewed', async (gig) => {
-      console.log('gig-viewed', gig)
       logger.info(
         `gig-viewed from socket [id: ${socket.id}], on user ${gig.owner.username}`
       )
@@ -60,14 +59,13 @@ function setupSocketAPI(http) {
     })
 
     socket.on('gig-ordered', async (order) => {
-      console.log('gig-ordered', order)
       logger.info(
         `gig-ordered from socket [id: ${socket.id}], on user ${order.buyer.username}`
       )
       socket.join('watching:' + order.buyer.username)
 
       const buyerSocket = await _getUserSocket(order.buyer._id)
-      console.log('buyerSocket', buyerSocket)
+
       if (buyerSocket)
         buyerSocket.emit(
           'gig-ordered',
@@ -180,7 +178,7 @@ async function _getAllSockets() {
 
 async function _printSockets() {
   const sockets = await _getAllSockets()
-  console.log(`Sockets: (count: ${sockets.length}):`)
+
   sockets.forEach(_printSocket)
 }
 function _printSocket(socket) {

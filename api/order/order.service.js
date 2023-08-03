@@ -8,10 +8,9 @@ async function query(filterBy = {}) {
   try {
     const criteria = _buildCriteria(filterBy)
 
-    console.log(criteria)
     const collection = await dbService.getCollection('order')
     var orders = await collection.find(criteria).toArray()
-    console.log(orders)
+
     return orders
   } catch (err) {
     logger.error('cannot find orders', err)
@@ -47,7 +46,7 @@ async function add(order) {
     let addedOrder = await collection.insertOne(order)
     addedOrder = addedOrder.ops[0]
     addedOrder.createdAt = ObjectId(addedOrder._id).getTimestamp()
-    console.log('Socket')
+
     return addedOrder
   } catch (err) {
     logger.error('cannot insert order', err)
